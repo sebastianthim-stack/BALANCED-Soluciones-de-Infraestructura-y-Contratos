@@ -1,0 +1,1531 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- Primary SEO -->
+  <meta name="description" content="BALANCED — Asesoramiento ejecutivo en ejecución de infraestructura ferroviaria y civil, y supervisión de contratos EPCT en minería en Argentina. Dirección: Sebastian Juarez Tejerina." />
+  <meta name="author" content="Sebastian Juarez Tejerina — BALANCED" />
+  <!-- Open Graph / LinkedIn / WhatsApp Preview -->
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="BALANCED — Soluciones de Infraestructura y Contratos" />
+  <meta property="og:title" content="BALANCED — Precisión en campo. Control contractual total." />
+  <meta property="og:description" content="Asesoramiento ejecutivo en infraestructura ferroviaria, obra civil y contratos EPCT en minería. Dirección: Sebastian Juarez Tejerina (Argentina)." />
+  <meta property="og:locale" content="es_AR" />
+  <meta property="og:locale:alternate" content="en_US" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="BALANCED — Soluciones de Infraestructura y Contratos" />
+  <meta name="twitter:description" content="Precisión en campo. Control contractual total. Infraestructura ferroviaria, civil y minería EPCT en Argentina." />
+
+  <!-- SVG Favicon -->
+  <title>BALANCED — Soluciones de Infraestructura y Contratos</title>
+  <style>
+    :root {
+      --bg-white: #FFFFFF;
+      --bg-light: #F5F5F7;
+      --bg-dark: #000000;
+      --bg-card-dark: #161617;
+      --text-primary: #1D1D1F;
+      --text-secondary: #6E6E73;
+      --text-on-dark: #F5F5F7;
+      --text-muted-dark: #A1A1A6;
+      --accent: #0071E3;
+      --accent-hover: #0077ED;
+      --border-light: #D2D2D7;
+      --border-dark: rgba(255, 255, 255, 0.14);
+      --radius-lg: 22px;
+      --radius-md: 16px;
+      --radius-pill: 980px;
+      --max-w: 1120px;
+      --font-sans: -apple-system, BlinkMacSystemFont, "SF Pro Display", "SF Pro Text", "Inter", "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      font-family: var(--font-sans);
+      color: var(--text-primary);
+      background: var(--bg-white);
+      -webkit-font-smoothing: antialiased;
+    }
+
+    body {
+      overflow-x: hidden;
+      line-height: 1.5;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    button, select, input, textarea {
+      font-family: inherit;
+    }
+
+    /* Frosted Glass Nav */
+    .nav {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      height: 48px;
+      backdrop-filter: saturate(180%) blur(20px);
+      -webkit-backdrop-filter: saturate(180%) blur(20px);
+      background: rgba(255, 255, 255, 0.82);
+      border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+    }
+
+    .nav-inner {
+      max-width: var(--max-w);
+      height: 100%;
+      margin: 0 auto;
+      padding: 0 24px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+    }
+
+    .brand-mark {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      font-weight: 700;
+      font-size: 0.92rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      white-space: nowrap;
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 24px;
+      font-size: 0.8rem;
+      color: var(--text-primary);
+    }
+
+    .nav-links a {
+      opacity: 0.82;
+      transition: opacity 0.2s ease, color 0.2s ease;
+      white-space: nowrap;
+    }
+
+    .nav-links a:hover {
+      opacity: 1;
+      color: var(--accent);
+    }
+
+    
+    /* Mobile Menu Toggle */
+    .mobile-menu-btn {
+      display: none;
+      background: transparent;
+      border: 1px solid rgba(0, 0, 0, 0.08);
+      cursor: pointer;
+      color: var(--text-primary);
+      padding: 6px 8px;
+      border-radius: 8px;
+      align-items: center;
+      justify-content: center;
+      transition: background 0.2s ease;
+    }
+
+    .mobile-menu-btn:hover {
+      background: rgba(0, 0, 0, 0.04);
+    }
+
+    .lang-toggle {
+      display: inline-flex;
+      align-items: center;
+      background: #E8E8ED;
+      border-radius: var(--radius-pill);
+      padding: 2px;
+      border: 1px solid rgba(0, 0, 0, 0.06);
+      flex-shrink: 0;
+    }
+
+    .lang-btn {
+      border: none;
+      background: transparent;
+      color: var(--text-primary);
+      font-size: 0.72rem;
+      font-weight: 600;
+      padding: 4px 10px;
+      border-radius: var(--radius-pill);
+      cursor: pointer;
+      transition: all 0.2s ease;
+    }
+
+    .lang-btn.active {
+      background: #000000;
+      color: #FFFFFF;
+    }
+
+    /* Sections */
+    .section {
+      padding: 96px 24px;
+    }
+
+    .section-light {
+      background: var(--bg-light);
+      color: var(--text-primary);
+    }
+
+    .section-white {
+      background: var(--bg-white);
+      color: var(--text-primary);
+    }
+
+    .section-dark {
+      background: var(--bg-dark);
+      color: var(--text-on-dark);
+    }
+
+    .container {
+      max-width: var(--max-w);
+      margin: 0 auto;
+    }
+
+    .eyebrow {
+      font-size: 0.78rem;
+      font-weight: 600;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-bottom: 12px;
+    }
+
+    .section-dark .eyebrow {
+      color: #2997FF;
+    }
+
+    .h1 {
+      font-size: clamp(2.35rem, 5.4vw, 4.1rem);
+      font-weight: 700;
+      letter-spacing: -0.03em;
+      line-height: 1.06;
+      max-width: 18ch;
+      margin: 0 auto 20px;
+    }
+
+    .h2 {
+      font-size: clamp(1.85rem, 3.8vw, 2.9rem);
+      font-weight: 700;
+      letter-spacing: -0.025em;
+      line-height: 1.12;
+      margin-bottom: 14px;
+    }
+
+    .lead {
+      font-size: clamp(1.05rem, 1.7vw, 1.28rem);
+      color: var(--text-secondary);
+      max-width: 62ch;
+      margin: 0 auto 32px;
+      font-weight: 400;
+    }
+
+    .section-dark .lead {
+      color: var(--text-muted-dark);
+    }
+
+    .center {
+      text-align: center;
+    }
+
+    .btn-row {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 14px;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      padding: 12px 24px;
+      border-radius: var(--radius-pill);
+      font-size: 0.95rem;
+      font-weight: 500;
+      cursor: pointer;
+      border: 1px solid transparent;
+      transition: all 0.2s ease;
+    }
+
+    .btn-primary {
+      background: var(--accent);
+      color: #FFFFFF;
+    }
+
+    .btn-primary:hover {
+      background: var(--accent-hover);
+      transform: translateY(-1px);
+    }
+
+    .btn-secondary-light {
+      background: transparent;
+      color: var(--accent);
+      border-color: rgba(0, 113, 227, 0.35);
+    }
+
+    .btn-secondary-light:hover {
+      background: rgba(0, 113, 227, 0.06);
+    }
+
+    .btn-secondary-dark {
+      background: rgba(255, 255, 255, 0.08);
+      color: #FFFFFF;
+      border-color: rgba(255, 255, 255, 0.22);
+    }
+
+    .btn-secondary-dark:hover {
+      background: rgba(255, 255, 255, 0.16);
+    }
+
+    /* Hero */
+    .hero {
+      padding: 88px 24px 72px;
+      background: radial-gradient(circle at 50% 0%, #F0F5FF 0%, #FFFFFF 65%);
+      border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+    }
+
+    .hero-subbrand {
+      font-size: 0.85rem;
+      font-weight: 600;
+      color: var(--text-secondary);
+      margin-bottom: 14px;
+    }
+
+    /* Key Metrics Strip */
+    .metrics-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 18px;
+      margin-top: 44px;
+    }
+
+    .metric-card {
+      background: var(--bg-light);
+      border: 1px solid rgba(0, 0, 0, 0.06);
+      border-radius: var(--radius-md);
+      padding: 22px 20px;
+      text-align: left;
+    }
+
+    .metric-val {
+      font-size: 1.75rem;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      color: var(--text-primary);
+      margin-bottom: 4px;
+    }
+
+    .metric-label {
+      font-size: 0.84rem;
+      color: var(--text-secondary);
+    }
+
+    /* Practice & Competitive Edge Cards */
+    .grid-2 {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 22px;
+    }
+
+    .card-light {
+      background: var(--bg-white);
+      border: 1px solid rgba(0, 0, 0, 0.08);
+      border-radius: var(--radius-lg);
+      padding: 32px;
+      transition: transform 0.22s ease, box-shadow 0.22s ease;
+    }
+
+    .card-light:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 14px 32px rgba(0, 0, 0, 0.06);
+    }
+
+    .card-tag {
+      display: inline-block;
+      font-size: 0.72rem;
+      font-weight: 600;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: var(--accent);
+      background: rgba(0, 113, 227, 0.08);
+      padding: 4px 10px;
+      border-radius: var(--radius-pill);
+      margin-bottom: 14px;
+    }
+
+    .card-title {
+      font-size: 1.32rem;
+      font-weight: 700;
+      letter-spacing: -0.015em;
+      margin-bottom: 10px;
+    }
+
+    .card-desc {
+      color: var(--text-secondary);
+      font-size: 0.96rem;
+      margin-bottom: 16px;
+    }
+
+    .bullet-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      font-size: 0.88rem;
+      color: var(--text-primary);
+    }
+
+    .bullet-list li::before {
+      content: "• ";
+      color: var(--accent);
+      font-weight: 700;
+    }
+
+    /* Filter Pills */
+    .filter-bar {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      justify-content: center;
+      margin: 28px 0 36px;
+    }
+
+    .filter-btn {
+      border: 1px solid var(--border-dark);
+      background: transparent;
+      color: var(--text-muted-dark);
+      padding: 8px 16px;
+      border-radius: var(--radius-pill);
+      font-size: 0.84rem;
+      font-weight: 500;
+      cursor: pointer;
+      transition: all 0.2s ease;
+    }
+
+    .filter-btn:hover,
+    .filter-btn.active {
+      background: #FFFFFF;
+      color: #000000;
+      border-color: #FFFFFF;
+    }
+
+    /* Milestones Grid */
+    .milestones-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+    }
+
+    .milestone-card {
+      background: var(--bg-card-dark);
+      border: 1px solid var(--border-dark);
+      border-radius: var(--radius-lg);
+      padding: 26px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      gap: 16px;
+    }
+
+    .milestone-period {
+      font-size: 0.78rem;
+      color: #2997FF;
+      font-weight: 600;
+      margin-bottom: 6px;
+    }
+
+    .milestone-org {
+      font-size: 1.2rem;
+      font-weight: 700;
+      color: #FFFFFF;
+      margin-bottom: 4px;
+    }
+
+    .milestone-role {
+      font-size: 0.88rem;
+      color: var(--text-muted-dark);
+      margin-bottom: 12px;
+    }
+
+    .milestone-body {
+      font-size: 0.9rem;
+      color: #D1D1D6;
+    }
+
+    .milestone-badge {
+      align-self: flex-start;
+      font-size: 0.72rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      padding: 4px 10px;
+      border-radius: var(--radius-pill);
+      background: rgba(255, 255, 255, 0.09);
+      color: #F5F5F7;
+    }
+
+    /* Diagnostic Tool */
+    .diagnostic-box {
+      background: var(--bg-light);
+      border: 1px solid rgba(0, 0, 0, 0.08);
+      border-radius: var(--radius-lg);
+      padding: 36px;
+      display: grid;
+      grid-template-columns: 1fr 1.25fr;
+      gap: 32px;
+      align-items: start;
+    }
+
+    .field-group {
+      margin-bottom: 18px;
+    }
+
+    .field-label {
+      display: block;
+      font-size: 0.84rem;
+      font-weight: 600;
+      margin-bottom: 8px;
+      color: var(--text-primary);
+    }
+
+    .select-input, .text-input, .textarea-input {
+      width: 100%;
+      padding: 12px 14px;
+      border-radius: 12px;
+      border: 1px solid var(--border-light);
+      background: #FFFFFF;
+      color: var(--text-primary);
+      font-size: 0.95rem;
+    }
+
+    .select-input:focus, .text-input:focus, .textarea-input:focus {
+      outline: none;
+      border-color: var(--accent);
+      box-shadow: 0 0 0 3px rgba(0, 113, 227, 0.14);
+    }
+
+    .diagnostic-output {
+      background: #FFFFFF;
+      border: 1px solid rgba(0, 0, 0, 0.08);
+      border-radius: var(--radius-md);
+      padding: 26px;
+    }
+
+    .diag-title {
+      font-size: 1.15rem;
+      font-weight: 700;
+      margin-bottom: 6px;
+    }
+
+    .diag-sub {
+      font-size: 0.88rem;
+      color: var(--text-secondary);
+      margin-bottom: 18px;
+    }
+
+    .diag-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      margin-bottom: 22px;
+      font-size: 0.92rem;
+    }
+
+    .diag-list li {
+      padding: 10px 14px;
+      border-radius: 10px;
+      background: var(--bg-light);
+    }
+
+    /* Credentials & Contact */
+    .creds-strip {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 18px;
+      margin-top: 28px;
+    }
+
+    .cred-item {
+      background: var(--bg-card-dark);
+      border: 1px solid var(--border-dark);
+      border-radius: var(--radius-md);
+      padding: 22px;
+    }
+
+    .cred-degree {
+      font-weight: 700;
+      font-size: 1rem;
+      color: #FFFFFF;
+      margin-bottom: 4px;
+    }
+
+    .cred-school {
+      font-size: 0.88rem;
+      color: var(--text-muted-dark);
+    }
+
+    .contact-card {
+      max-width: 680px;
+      margin: 0 auto;
+      background: var(--bg-light);
+      border: 1px solid rgba(0, 0, 0, 0.08);
+      border-radius: var(--radius-lg);
+      padding: 36px;
+    }
+
+    .form-status {
+      margin-top: 14px;
+      padding: 12px 16px;
+      border-radius: 12px;
+      background: rgba(0, 113, 227, 0.09);
+      color: #004E9C;
+      font-size: 0.9rem;
+      display: none;
+    }
+
+    footer {
+      background: var(--bg-light);
+      border-top: 1px solid rgba(0, 0, 0, 0.08);
+      padding: 36px 24px;
+      font-size: 0.82rem;
+      color: var(--text-secondary);
+    }
+
+    .footer-inner {
+      max-width: var(--max-w);
+      margin: 0 auto;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      gap: 16px;
+    }
+
+    @media (max-width: 900px) {
+      .metrics-grid { grid-template-columns: repeat(2, 1fr); }
+      .grid-2 { grid-template-columns: 1fr; }
+      .milestones-grid { grid-template-columns: 1fr; }
+      .diagnostic-box { grid-template-columns: 1fr; }
+      .creds-strip { grid-template-columns: 1fr; }
+      
+      .mobile-menu-btn {
+        display: inline-flex;
+      }
+
+      .nav-links {
+        display: none;
+        position: absolute;
+        top: 48px;
+        left: 0;
+        right: 0;
+        background: rgba(255, 255, 255, 0.98);
+        backdrop-filter: blur(20px);
+        -webkit-backdrop-filter: blur(20px);
+        flex-direction: column;
+        padding: 20px 24px;
+        gap: 16px;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+        box-shadow: 0 14px 28px rgba(0, 0, 0, 0.06);
+      }
+
+      .nav-links.open {
+        display: flex;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <nav class="nav" aria-label="Primary Navigation">
+    <div class="nav-inner">
+      <a href="#top" class="brand-mark">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+          <rect x="2" y="18" width="20" height="2.5" rx="1.2" fill="#000000"/>
+          <path d="M5 18L12 5L19 18" stroke="#0071E3" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+          <circle cx="12" cy="5" r="2.2" fill="#000000"/>
+        </svg>
+        <span>BALANCED</span>
+      </a>
+
+      <div class="nav-links">
+        <a href="#capabilities" data-i18n="nav_cap">Capacidades</a>
+        <a href="#edge" data-i18n="nav_edge">Ventaja Competitiva</a>
+        <a href="#track-record" data-i18n="nav_track">Trayectoria</a>
+        <a href="#diagnostic" data-i18n="nav_diag">Diagnóstico</a>
+        <a href="#contact" data-i18n="nav_contact">Contacto</a>
+      </div>
+
+      <div class="lang-toggle" role="group" aria-label="Language Switcher">
+        <button class="lang-btn active" id="btn-es" onclick="setLang('es')">ES</button>
+        <button class="lang-btn" id="btn-en" onclick="setLang('en')">EN</button>
+      </div>
+
+      <button class="mobile-menu-btn" id="mobile-toggle" onclick="toggleMobileNav()" aria-label="Menu" aria-expanded="false">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="3" y1="12" x2="21" y2="12"></line>
+          <line x1="3" y1="6" x2="21" y2="6"></line>
+          <line x1="3" y1="18" x2="21" y2="18"></line>
+        </svg>
+      </button>
+    </div>
+  </nav>
+
+  <header class="hero center" id="top">
+    <div class="container">
+      <div class="hero-subbrand" data-i18n="subbrand">BALANCED — Soluciones de Infraestructura y Contratos</div>
+      <h1 class="h1" data-i18n="hero_title">Precisión en campo. Control contractual total.</h1>
+      <p class="lead" data-i18n="hero_lead">
+        Asesoramiento ejecutivo en ejecución de infraestructura ferroviaria y civil, supervisión de contratos EPCT en minería y seguridad operacional en Argentina — con respaldo bilingüe ES/EN.
+      </p>
+      <div class="btn-row">
+        <a href="#diagnostic" class="btn btn-primary" data-i18n="cta_primary">Solicitar diagnóstico de alcance</a>
+        <a href="#track-record" class="btn btn-secondary-light" data-i18n="cta_secondary">Ver trayectoria verificada</a>
+      </div>
+
+      <div class="metrics-grid">
+        <div class="metric-card">
+          <div class="metric-val">317,33 km</div>
+          <div class="metric-label" data-i18n="m1_label">Renovación integral de vía (FF.CC. Belgrano)</div>
+        </div>
+        <div class="metric-card">
+          <div class="metric-val">90.000 m²</div>
+          <div class="metric-label" data-i18n="m2_label">Centros logísticos de materiales ferroviarios</div>
+        </div>
+        <div class="metric-card">
+          <div class="metric-val">230 km +</div>
+          <div class="metric-label" data-i18n="m3_label">Mejoramiento de vía, puentes y alcantarillas</div>
+        </div>
+        <div class="metric-card">
+          <div class="metric-val">EPCT + SMS</div>
+          <div class="metric-label" data-i18n="m4_label">Compliance minero, contratos y seguridad</div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <section class="section section-light" id="capabilities">
+    <div class="container">
+      <div class="center">
+        <div class="eyebrow" data-i18n="cap_eyebrow">Áreas de Práctica</div>
+        <h2 class="h2" data-i18n="cap_title">Cuatro pilares diseñados para proyectos complejos.</h2>
+        <p class="lead" data-i18n="cap_lead">
+          Desde el frente de obra ferroviario y civil hasta la supervisión contractual EPCT y el análisis de incidentes.
+        </p>
+      </div>
+
+      <div class="grid-2">
+        <article class="card-light">
+          <span class="card-tag" data-i18n="c1_tag">Infraestructura &amp; Obra</span>
+          <h3 class="card-title" data-i18n="c1_title">Ejecución Ferroviaria y Civil</h3>
+          <p class="card-desc" data-i18n="c1_desc">
+            Dirección en territorio, seguimiento de contratistas, control de plazos e inversiones, certificaciones mensuales y Libro Legal de Obra.
+          </p>
+          <ul class="bullet-list">
+            <li data-i18n="c1_b1">Renovación y mejoramiento de vía troncal y ramales</li>
+            <li data-i18n="c1_b2">Centros logísticos, refundación de puentes, pasos a nivel y alcantarillas</li>
+            <li data-i18n="c1_b3">Coordinación de cuadrillas, maquinaria y suministro de materiales</li>
+          </ul>
+        </article>
+
+        <article class="card-light">
+          <span class="card-tag" data-i18n="c2_tag">Contratos &amp; Compliance</span>
+          <h3 class="card-title" data-i18n="c2_title">Contratos EPCT y Gobernanza</h3>
+          <p class="card-desc" data-i18n="c2_desc">
+            Supervisión de contratos EPCT en proyectos mineros e industriales, trazabilidad de obligaciones y mitigación de desvíos comerciales.
+          </p>
+          <ul class="bullet-list">
+            <li data-i18n="c2_b1">Control de cumplimiento contractual, alcances y entregables</li>
+            <li data-i18n="c2_b2">Alineación entre especificaciones técnicas y ejecución de contratistas</li>
+            <li data-i18n="c2_b3">Reportes ejecutivos claros para directorios y socios técnicos</li>
+          </ul>
+        </article>
+
+        <article class="card-light">
+          <span class="card-tag" data-i18n="c3_tag">Seguridad Operacional</span>
+          <h3 class="card-title" data-i18n="c3_title">SMS e Investigación de Incidentes</h3>
+          <p class="card-desc" data-i18n="c3_desc">
+            Gestión de seguridad operacional ferroviaria, evaluación de riesgos en operación y análisis de causa raíz para prevenir recurrencias.
+          </p>
+          <ul class="bullet-list">
+            <li data-i18n="c3_b1">Sistemas de Gestión de Seguridad Operacional (SMS)</li>
+            <li data-i18n="c3_b2">Investigación técnica de incidentes y desvíos operativos</li>
+            <li data-i18n="c3_b3">Controles preventivos en zonas de obra y operación activa</li>
+          </ul>
+        </article>
+
+        <article class="card-light">
+          <span class="card-tag" data-i18n="c4_tag">Base Técnica &amp; Bilingüe</span>
+          <h3 class="card-title" data-i18n="c4_title">Ingeniería Civil, Soldadura y Español / Inglés</h3>
+          <p class="card-desc" data-i18n="c4_desc">
+            Formación en Ingeniería Civil y técnica en soldadura y calderería, con fluidez en Español e Inglés.
+          </p>
+          <ul class="bullet-list">
+            <li data-i18n="c4_b1">Análisis cuantitativo, matemático y estructural en campo</li>
+            <li data-i18n="c4_b2">Redacción y auditoría técnica en Español e Inglés</li>
+            <li data-i18n="c4_b3">Interfaz efectiva entre equipos locales y sponsors internacionales</li>
+          </ul>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-white" id="edge">
+    <div class="container">
+      <div class="center">
+        <div class="eyebrow" data-i18n="edge_eyebrow">Posicionamiento en Argentina</div>
+        <h2 class="h2" data-i18n="edge_title">Donde BALANCED marca la diferencia.</h2>
+        <p class="lead" data-i18n="edge_lead">
+          Unimos la realidad operativa del frente de obra con el rigor contractual y de cumplimiento que exigen los proyectos actuales.
+        </p>
+      </div>
+
+      <div class="grid-2">
+        <div class="card-light">
+          <span class="card-tag" data-i18n="e1_tag">01 · Obra + Contrato</span>
+          <h3 class="card-title" data-i18n="e1_title">Sin brecha entre el contrato y el terreno</h3>
+          <p class="card-desc" data-i18n="e1_desc">
+            Muchas consultoras se quedan en el gabinete y muchas constructoras priorizan el avance físico sin blindar la documentación contractual. BALANCED conecta certificaciones, plazos, contratistas y cumplimiento en una sola visión.
+          </p>
+        </div>
+
+        <div class="card-light">
+          <span class="card-tag" data-i18n="e2_tag">02 · Transferencia Sectorial</span>
+          <h3 class="card-title" data-i18n="e2_title">Disciplina ferroviaria aplicada a minería EPCT</h3>
+          <p class="card-desc" data-i18n="e2_desc">
+            El control de frentes extensos, la trazabilidad de hitos y el análisis de riesgos operacionales en ferrocarriles fortalecen la supervisión de contratos EPCT en minería e infraestructura.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-dark" id="track-record">
+    <div class="container">
+      <div class="center">
+        <div class="eyebrow" data-i18n="tr_eyebrow">Trayectoria Verificada</div>
+        <h2 class="h2" data-i18n="tr_title">Resultados construidos en escala real.</h2>
+        <p class="lead" data-i18n="tr_lead">
+          Experiencia en minería, consultoría ferroviaria, innovación, logística e infraestructura pública en Argentina.
+        </p>
+      </div>
+
+      <div class="filter-bar" role="group" aria-label="Filter Track Record">
+        <button class="filter-btn active" data-filter="all" onclick="filterMilestones('all', this)" data-i18n="f_all">Todos</button>
+        <button class="filter-btn" data-filter="mining" onclick="filterMilestones('mining', this)" data-i18n="f_mining">Minería &amp; EPCT</button>
+        <button class="filter-btn" data-filter="rail" onclick="filterMilestones('rail', this)" data-i18n="f_rail">Ferrocarriles &amp; Civil</button>
+        <button class="filter-btn" data-filter="advisory" onclick="filterMilestones('advisory', this)" data-i18n="f_adv">Consultoría &amp; Innovación</button>
+      </div>
+
+      <div class="milestones-grid" id="milestones-grid">
+        <article class="milestone-card" data-cat="mining">
+          <div>
+            <div class="milestone-period">Mar 2024 – Feb 2026 · Salta</div>
+            <h3 class="milestone-org">Ganfeng Lithium</h3>
+            <div class="milestone-role" data-i18n="ms1_role">Supervisor de Contratos y Compliance</div>
+            <p class="milestone-body" data-i18n="ms1_body">
+              Supervisión de contratos EPCT en proyectos mineros, control de obligaciones contractuales, cumplimiento normativo y seguimiento de entregables.
+            </p>
+          </div>
+          <span class="milestone-badge" data-i18n="b_mining">Minería · EPCT</span>
+        </article>
+
+        <article class="milestone-card" data-cat="advisory">
+          <div>
+            <div class="milestone-period">Oct 2021 – Feb 2024</div>
+            <h3 class="milestone-org">Balanced Consulting</h3>
+            <div class="milestone-role" data-i18n="ms2_role">Consultor Ferroviario</div>
+            <p class="milestone-body" data-i18n="ms2_body">
+              Asesoramiento especializado en infraestructura ferroviaria, control de ejecución, evaluación de riesgos operativos y estructuración de soluciones técnicas.
+            </p>
+          </div>
+          <span class="milestone-badge" data-i18n="b_adv">Consultoría</span>
+        </article>
+
+        <article class="milestone-card" data-cat="advisory">
+          <div>
+            <div class="milestone-period">May 2023 – Oct 2023 · Argentina</div>
+            <h3 class="milestone-org">Naves Federal 2023</h3>
+            <div class="milestone-role" data-i18n="ms3_role">Ganador Región Norte — Innovación y Diseño de Producto</div>
+            <p class="milestone-body" data-i18n="ms3_body">
+              Reconocimiento regional en el programa impulsado por Banco Macro, IAE Business School y Universidad Austral.
+            </p>
+          </div>
+          <span class="milestone-badge" data-i18n="b_inn">Innovación</span>
+        </article>
+
+        <article class="milestone-card" data-cat="rail">
+          <div>
+            <div class="milestone-period">Feb 2021 – Oct 2021</div>
+            <h3 class="milestone-org">MERCO VIAL S.A.</h3>
+            <div class="milestone-role" data-i18n="ms4_role">Coordinador Ferroviario</div>
+            <p class="milestone-body" data-i18n="ms4_body">
+              Coordinación operativa de trabajos ferroviarios, planificación de recursos y seguimiento de avance en campo.
+            </p>
+          </div>
+          <span class="milestone-badge" data-i18n="b_rail">Ferrocarriles</span>
+        </article>
+
+        <article class="milestone-card" data-cat="rail">
+          <div>
+            <div class="milestone-period">Ago 2016 – Feb 2021</div>
+            <h3 class="milestone-org">Trenes Argentinos Infraestructura</h3>
+            <div class="milestone-role" data-i18n="ms5_role">Gerente de Obra de Área — FF.CC. Gral. Belgrano</div>
+            <p class="milestone-body" data-i18n="ms5_body">
+              4 proyectos de renovación total de vía (317,33 km completados en Santa Fe, Chaco, Salta y Jujuy) y 3 centros logísticos de materiales ferroviarios (90.000 m²).
+            </p>
+          </div>
+          <span class="milestone-badge" data-i18n="b_rail">317,33 km · 90.000 m²</span>
+        </article>
+
+        <article class="milestone-card" data-cat="rail">
+          <div>
+            <div class="milestone-period">Ago 2014 – Ago 2016 · 2011–2014</div>
+            <h3 class="milestone-org">Trenes Argentinos Cargas &amp; TFP Construcciones</h3>
+            <div class="milestone-role" data-i18n="ms6_role">Coordinador Regional y Gerente de Producción</div>
+            <p class="milestone-body" data-i18n="ms6_body">
+              230 km de mejoramiento de vía, refundación de puente colapsado, pasos a nivel y alcantarillas (Santa Fe, Córdoba, San Juan y La Rioja), más 12 obras civiles/productivas en TFP.
+            </p>
+          </div>
+          <span class="milestone-badge" data-i18n="b_civil">230 km + 12 Obras</span>
+        </article>
+      </div>
+
+      <div class="creds-strip">
+        <div class="cred-item">
+          <div class="cred-degree" data-i18n="cr1_t">Posgrado en Seguridad Operacional Ferroviaria</div>
+          <div class="cred-school">Universidad Nacional de San Martín (UNSAM)</div>
+        </div>
+        <div class="cred-item">
+          <div class="cred-degree" data-i18n="cr2_t">Ingeniería Civil &amp; Análisis Matemático</div>
+          <div class="cred-school">UTN · Universidad Nacional de Salta</div>
+        </div>
+        <div class="cred-item">
+          <div class="cred-degree" data-i18n="cr3_t">Soldadura por Arco Autónomo y Calderería</div>
+          <div class="cred-school">Centro de Formación Profesional N°3166</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-white" id="diagnostic">
+    <div class="container">
+      <div class="center">
+        <div class="eyebrow" data-i18n="diag_eyebrow">Diagnóstico Interactivo</div>
+        <h2 class="h2" data-i18n="diag_title">Evalúe las prioridades de su contrato o frente de obra.</h2>
+        <p class="lead" data-i18n="diag_lead">
+          Seleccione su sector y etapa del proyecto para identificar puntos críticos de control y cargar un resumen directo en el formulario.
+        </p>
+      </div>
+
+      <div class="diagnostic-box">
+        <div>
+          <div class="field-group">
+            <label for="sector-select" class="field-label" data-i18n="lbl_sector">Sector del proyecto</label>
+            <select id="sector-select" class="select-input" onchange="updateDiagnostic()">
+              <option value="mining" data-i18n="opt_mining">Minería &amp; Contratos EPCT</option>
+              <option value="rail" data-i18n="opt_rail">Infraestructura Ferroviaria y Logística</option>
+              <option value="civil" data-i18n="opt_civil">Obra Civil, Estructuras y Contratistas</option>
+            </select>
+          </div>
+
+          <div class="field-group">
+            <label for="stage-select" class="field-label" data-i18n="lbl_stage">Etapa actual</label>
+            <select id="stage-select" class="select-input" onchange="updateDiagnostic()">
+              <option value="mobilization" data-i18n="opt_mob">Contratación, Movilización y Alcance</option>
+              <option value="execution" data-i18n="opt_exec">Ejecución Activa, Certificaciones y Desvíos</option>
+              <option value="safety" data-i18n="opt_saf">Auditoría, Seguridad Operacional o Cierre</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="diagnostic-output">
+          <div class="diag-title" id="diag-headline"></div>
+          <div class="diag-sub" id="diag-sub"></div>
+          <ul class="diag-list" id="diag-points"></ul>
+          <button type="button" class="btn btn-primary" onclick="prefillContact()" data-i18n="btn_prefill">
+            Cargar este diagnóstico en consulta
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-light" id="contact">
+    <div class="container">
+      <div class="center">
+        <div class="eyebrow" data-i18n="con_eyebrow">Contacto Directo</div>
+        <h2 class="h2" data-i18n="con_title">Conversemos sobre su proyecto.</h2>
+        <p class="lead" data-i18n="con_lead">
+          Argentina (ART / UTC-3) · Atención en Español e Inglés · LinkedIn: sebastian-juarez-tejerina-5618b712a
+        </p>
+      </div>
+
+      <div class="contact-card">
+        <form id="contact-form" onsubmit="handleSubmit(event)">
+          <div class="field-group">
+            <label for="name-input" class="field-label" data-i18n="f_name">Nombre y empresa</label>
+            <input id="name-input" type="text" class="text-input" required placeholder="Ej. Martín Gómez — Operaciones / Minería" />
+          </div>
+          <div class="field-group">
+            <label for="email-input" class="field-label" data-i18n="f_email">Correo electrónico</label>
+            <input id="email-input" type="email" class="text-input" required placeholder="nombre@empresa.com" />
+          </div>
+          <div class="field-group">
+            <label for="msg-input" class="field-label" data-i18n="f_msg">Alcance o consulta</label>
+            <textarea id="msg-input" rows="4" class="textarea-input" required placeholder="Describa el proyecto, contrato o necesidad de supervisión..."></textarea>
+          </div>
+          <div class="btn-row" style="justify-content: flex-start; gap: 12px; margin-top: 10px;">
+            <button type="submit" class="btn btn-primary" data-i18n="f_submit">Enviar consulta</button>
+            <a id="wa-btn" href="https://wa.me/5491100000000?text=Hola%20Sebastian,%20te%20contacto%20desde%20BALANCED%20por%20un%20proyecto." target="_blank" rel="noopener noreferrer" class="btn btn-secondary-light">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path>
+              </svg>
+              <span data-i18n="f_wa">Consultar por WhatsApp</span>
+            </a>
+          </div>
+          <div class="form-status" id="form-status"></div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-inner">
+      <div><strong>BALANCED</strong> — Soluciones de Infraestructura y Contratos · Argentina (ART / UTC-3)</div>
+      <div>
+        <a href="https://www.linkedin.com/in/sebastian-juarez-tejerina-5618b712a" target="_blank" rel="noopener noreferrer" style="color: var(--accent); font-weight: 500;">LinkedIn</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const translations = {
+      es: {
+        nav_cap: "Capacidades",
+        nav_edge: "Ventaja Competitiva",
+        nav_track: "Trayectoria",
+        nav_diag: "Diagnóstico",
+        nav_contact: "Contacto",
+        subbrand: "BALANCED — Soluciones de Infraestructura y Contratos",
+        hero_title: "Precisión en campo. Control contractual total.",
+        hero_lead: "Asesoramiento ejecutivo en ejecución de infraestructura ferroviaria y civil, supervisión de contratos EPCT en minería y seguridad operacional en Argentina — con respaldo bilingüe ES/EN.",
+        cta_primary: "Solicitar diagnóstico de alcance",
+        cta_secondary: "Ver trayectoria verificada",
+        m1_label: "Renovación integral de vía (FF.CC. Belgrano)",
+        m2_label: "Centros logísticos de materiales ferroviarios",
+        m3_label: "Mejoramiento de vía, puentes y alcantarillas",
+        m4_label: "Compliance minero, contratos y seguridad",
+        cap_eyebrow: "Áreas de Práctica",
+        cap_title: "Cuatro pilares diseñados para proyectos complejos.",
+        cap_lead: "Desde el frente de obra ferroviario y civil hasta la supervisión contractual EPCT y el análisis de incidentes.",
+        c1_tag: "Infraestructura & Obra",
+        c1_title: "Ejecución Ferroviaria y Civil",
+        c1_desc: "Dirección en territorio, seguimiento de contratistas, control de plazos e inversiones, certificaciones mensuales y Libro Legal de Obra.",
+        c1_b1: "Renovación y mejoramiento de vía troncal y ramales",
+        c1_b2: "Centros logísticos, refundación de puentes, pasos a nivel y alcantarillas",
+        c1_b3: "Coordinación de cuadrillas, maquinaria y suministro de materiales",
+        c2_tag: "Contratos & Compliance",
+        c2_title: "Contratos EPCT y Gobernanza",
+        c2_desc: "Supervisión de contratos EPCT en proyectos mineros e industriales, trazabilidad de obligaciones y mitigación de desvíos comerciales.",
+        c2_b1: "Control de cumplimiento contractual, alcances y entregables",
+        c2_b2: "Alineación entre especificaciones técnicas y ejecución de contratistas",
+        c2_b3: "Reportes ejecutivos claros para directorios y socios técnicos",
+        c3_tag: "Seguridad Operacional",
+        c3_title: "SMS e Investigación de Incidentes",
+        c3_desc: "Gestión de seguridad operacional ferroviaria, evaluación de riesgos en operación y análisis de causa raíz para prevenir recurrencias.",
+        c3_b1: "Sistemas de Gestión de Seguridad Operacional (SMS)",
+        c3_b2: "Investigación técnica de incidentes y desvíos operativos",
+        c3_b3: "Controles preventivos en zonas de obra y operación activa",
+        c4_tag: "Base Técnica & Bilingüe",
+        c4_title: "Ingeniería Civil, Soldadura y Español / Inglés",
+        c4_desc: "Formación en Ingeniería Civil y técnica en soldadura y calderería, con fluidez en Español e Inglés.",
+        c4_b1: "Análisis cuantitativo, matemático y estructural en campo",
+        c4_b2: "Redacción y auditoría técnica en Español e Inglés",
+        c4_b3: "Interfaz efectiva entre equipos locales y sponsors internacionales",
+        edge_eyebrow: "Posicionamiento en Argentina",
+        edge_title: "Donde BALANCED marca la diferencia.",
+        edge_lead: "Unimos la realidad operativa del frente de obra con el rigor contractual y de cumplimiento que exigen los proyectos actuales.",
+        e1_tag: "01 · Obra + Contrato",
+        e1_title: "Sin brecha entre el contrato y el terreno",
+        e1_desc: "Muchas consultoras se quedan en el gabinete y muchas constructoras priorizan el avance físico sin blindar la documentación contractual. BALANCED conecta certificaciones, plazos, contratistas y cumplimiento en una sola visión.",
+        e2_tag: "02 · Transferencia Sectorial",
+        e2_title: "Disciplina ferroviaria aplicada a minería EPCT",
+        e2_desc: "El control de frentes extensos, la trazabilidad de hitos y el análisis de riesgos operacionales en ferrocarriles fortalecen la supervisión de contratos EPCT en minería e infraestructura.",
+        tr_eyebrow: "Trayectoria Verificada",
+        tr_title: "Resultados construidos en escala real.",
+        tr_lead: "Experiencia en minería, consultoría ferroviaria, innovación, logística e infraestructura pública en Argentina.",
+        f_all: "Todos",
+        f_mining: "Minería & EPCT",
+        f_rail: "Ferrocarriles & Civil",
+        f_adv: "Consultoría & Innovación",
+        ms1_role: "Supervisor de Contratos y Compliance",
+        ms1_body: "Supervisión de contratos EPCT en proyectos mineros, control de obligaciones contractuales, cumplimiento normativo y seguimiento de entregables.",
+        b_mining: "Minería · EPCT",
+        ms2_role: "Consultor Ferroviario",
+        ms2_body: "Asesoramiento especializado en infraestructura ferroviaria, control de ejecución, evaluación de riesgos operativos y estructuración de soluciones técnicas.",
+        b_adv: "Consultoría",
+        ms3_role: "Ganador Región Norte — Innovación y Diseño de Producto",
+        ms3_body: "Reconocimiento regional en el programa impulsado por Banco Macro, IAE Business School y Universidad Austral.",
+        b_inn: "Innovación",
+        ms4_role: "Coordinador Ferroviario",
+        ms4_body: "Coordinación operativa de trabajos ferroviarios, planificación de recursos y seguimiento de avance en campo.",
+        b_rail: "Ferrocarriles",
+        ms5_role: "Gerente de Obra de Área — FF.CC. Gral. Belgrano",
+        ms5_body: "4 proyectos de renovación total de vía (317,33 km completados en Santa Fe, Chaco, Salta y Jujuy) y 3 centros logísticos de materiales ferroviarios (90.000 m²).",
+        ms6_role: "Coordinador Regional y Gerente de Producción",
+        ms6_body: "230 km de mejoramiento de vía, refundación de puente colapsado, pasos a nivel y alcantarillas (Santa Fe, Córdoba, San Juan y La Rioja), más 12 obras civiles/productivas en TFP.",
+        b_civil: "230 km + 12 Obras",
+        cr1_t: "Posgrado en Seguridad Operacional Ferroviaria",
+        cr2_t: "Ingeniería Civil & Análisis Matemático",
+        cr3_t: "Soldadura por Arco Autónomo y Calderería",
+        diag_eyebrow: "Diagnóstico Interactivo",
+        diag_title: "Evalúe las prioridades de su contrato o frente de obra.",
+        diag_lead: "Seleccione su sector y etapa del proyecto para identificar puntos críticos de control y cargar un resumen directo en el formulario.",
+        lbl_sector: "Sector del proyecto",
+        opt_mining: "Minería & Contratos EPCT",
+        opt_rail: "Infraestructura Ferroviaria y Logística",
+        opt_civil: "Obra Civil, Estructuras y Contratistas",
+        lbl_stage: "Etapa actual",
+        opt_mob: "Contratación, Movilización y Alcance",
+        opt_exec: "Ejecución Activa, Certificaciones y Desvíos",
+        opt_saf: "Auditoría, Seguridad Operacional o Cierre",
+        btn_prefill: "Cargar este diagnóstico en consulta",
+        con_eyebrow: "Contacto Directo",
+        con_title: "Conversemos sobre su proyecto.",
+        con_lead: "Argentina (ART / UTC-3) · Atención en Español e Inglés · LinkedIn: sebastian-juarez-tejerina-5618b712a",
+        f_name: "Nombre y empresa",
+        f_email: "Correo electrónico",
+        f_msg: "Alcance o consulta",
+        f_submit: "Enviar consulta",
+        f_wa: "Consultar por WhatsApp"
+      },
+      en: {
+        nav_cap: "Capabilities",
+        nav_edge: "Competitive Edge",
+        nav_track: "Track Record",
+        nav_diag: "Diagnostic",
+        nav_contact: "Contact",
+        subbrand: "BALANCED — Soluciones de Infraestructura y Contratos",
+        hero_title: "Field precision. End-to-end contract control.",
+        hero_lead: "Executive advisory across railway and civil infrastructure execution, mining EPCT contract compliance, and operational safety in Argentina — delivered in Spanish and English.",
+        cta_primary: "Request a scope diagnostic",
+        cta_secondary: "Explore verified track record",
+        m1_label: "Full track renewal (Belgrano Railway)",
+        m2_label: "Railway material logistics centers",
+        m3_label: "Track improvement, bridges & culverts",
+        m4_label: "Mining compliance, contracts & safety",
+        cap_eyebrow: "Practice Areas",
+        cap_title: "Four pillars built for demanding projects.",
+        cap_lead: "From active rail and civil workfronts to EPCT contract compliance and operational incident analysis.",
+        c1_tag: "Infrastructure & Execution",
+        c1_title: "Railway & Civil Execution",
+        c1_desc: "On-site leadership, contractor oversight, schedule and capex tracking, monthly certifications, and formal site logbooks (Libro Legal de Obra).",
+        c1_b1: "Mainline and branch track renewal and improvement",
+        c1_b2: "Logistics centers, bridge re-foundation, level crossings, and culverts",
+        c1_b3: "Crew, machinery, and material supply coordination",
+        c2_tag: "Contracts & Compliance",
+        c2_title: "EPCT Contracts & Governance",
+        c2_desc: "Supervision of EPCT contracts in mining and industrial projects, obligation traceability, and commercial deviation control.",
+        c2_b1: "Contractual compliance, scope, and deliverable verification",
+        c2_b2: "Alignment between technical specifications and contractor delivery",
+        c2_b3: "Clear executive reporting for boards and technical partners",
+        c3_tag: "Operational Safety",
+        c3_title: "SMS & Incident Investigation",
+        c3_desc: "Railway Safety Management Systems (SMS), operational risk evaluation, and root-cause incident analysis to prevent recurrence.",
+        c3_b1: "Operational Safety Management Systems (SMS)",
+        c3_b2: "Technical investigation of incidents and operational deviations",
+        c3_b3: "Preventive controls across active work zones and operations",
+        c4_tag: "Technical Base & Bilingual",
+        c4_title: "Civil Engineering, Welding & EN / ES",
+        c4_desc: "Civil engineering and welding/boilermaking technical foundation, paired with Spanish and English.",
+        c4_b1: "Quantitative, mathematical, and field engineering analysis",
+        c4_b2: "Technical documentation and review in Spanish and English",
+        c4_b3: "Seamless alignment between local teams and international sponsors",
+        edge_eyebrow: "Positioning in Argentina",
+        edge_title: "Where BALANCED stands apart.",
+        edge_lead: "Connecting day-to-day field execution with the contract and compliance discipline modern projects require.",
+        e1_tag: "01 · Field + Contract",
+        e1_title: "Closing the gap between contract and site",
+        e1_desc: "Many consultancies stay on paper while many contractors push physical progress ahead of contract records. BALANCED unifies certifications, schedules, contractors, and compliance.",
+        e2_tag: "02 · Cross-Sector Rigor",
+        e2_title: "Railroad discipline applied to mining EPCT",
+        e2_desc: "Managing multi-hundred-kilometer corridors, milestone tracking, and operational safety strengthens EPCT contract oversight in mining and infrastructure.",
+        tr_eyebrow: "Verified Track Record",
+        tr_title: "Outcomes delivered at real scale.",
+        tr_lead: "Track record spanning mining, rail advisory, innovation, logistics, and public infrastructure in Argentina.",
+        f_all: "All",
+        f_mining: "Mining & EPCT",
+        f_rail: "Rail & Civil",
+        f_adv: "Advisory & Innovation",
+        ms1_role: "Contracts & Compliance Supervisor",
+        ms1_body: "Supervision of EPCT contracts in mining operations, contractual obligation tracking, regulatory compliance, and deliverable control.",
+        b_mining: "Mining · EPCT",
+        ms2_role: "Railway Consultant",
+        ms2_body: "Specialized railway infrastructure advisory, execution monitoring, operational risk evaluation, and technical structuring.",
+        b_adv: "Advisory",
+        ms3_role: "North Region Winner — Innovation & Product Design",
+        ms3_body: "Regional award in the program organized by Banco Macro, IAE Business School, and Universidad Austral.",
+        b_inn: "Innovation",
+        ms4_role: "Railway Coordinator",
+        ms4_body: "Operational coordination of railway works, resource planning, and field progress tracking.",
+        b_rail: "Railways",
+        ms5_role: "Area Construction Manager — Belgrano Railway",
+        ms5_body: "4 full track renewal projects (317.33 km completed across Santa Fe, Chaco, Salta, and Jujuy) and 3 railway material logistics centers (90,000 m²).",
+        ms6_role: "Regional Coordinator & Production Manager",
+        ms6_body: "230 km of track improvement, collapsed bridge re-foundation, level crossings, and culverts (Santa Fe, Córdoba, San Juan, and La Rioja), plus 12 civil/production projects at TFP.",
+        b_civil: "230 km + 12 Works",
+        cr1_t: "Postgraduate in Railway Operational Safety & Accident Investigation",
+        cr2_t: "Civil Engineering & Mathematical Analysis",
+        cr3_t: "Autonomous Arc Welding & Boilermaking",
+        diag_eyebrow: "Interactive Diagnostic",
+        diag_title: "Assess priorities for your contract or workfront.",
+        diag_lead: "Select your sector and project stage to review key control priorities and load a summary directly into the inquiry form.",
+        lbl_sector: "Project sector",
+        opt_mining: "Mining & EPCT Contracts",
+        opt_rail: "Railway Infrastructure & Logistics",
+        opt_civil: "Civil Works, Structures & Contractors",
+        lbl_stage: "Current stage",
+        opt_mob: "Procurement, Mobilization & Scope",
+        opt_exec: "Active Execution, Certifications & Deviations",
+        opt_saf: "Audit, Operational Safety or Closeout",
+        btn_prefill: "Load diagnostic into inquiry",
+        con_eyebrow: "Direct Contact",
+        con_title: "Let's discuss your project.",
+        con_lead: "Argentina (ART / UTC-3) · Spanish & English · LinkedIn: sebastian-juarez-tejerina-5618b712a",
+        f_name: "Name and company",
+        f_email: "Email address",
+        f_msg: "Scope or inquiry",
+        f_submit: "Send inquiry",
+        f_wa: "Chat on WhatsApp"
+      }
+    };
+
+    const diagData = {
+      es: {
+        mining: {
+          title: "Minería & Contratos EPCT",
+          stages: {
+            mobilization: {
+              sub: "Auditoría de matrices contractuales, interfaces técnicas y condiciones previas a la movilización.",
+              points: [
+                "Revisar exhaustivamente alcances, límites de batería (battery limits) y penalidades en contratos EPCT.",
+                "Definir matrices de responsabilidades e interfaces técnicas críticas entre mandante, contratistas y subcontratistas.",
+                "Validar cronograma maestro de hitos de movilización y requerimientos de calificación de cuadrillas y equipos."
+              ]
+            },
+            execution: {
+              sub: "Control diario en terreno, Libro Legal de Obra y alineación de certificaciones mensuales.",
+              points: [
+                "Trazabilidad continua de obligaciones contractuales, entregables técnicos y avance físico real en mina/planta.",
+                "Alineación estricta de certificaciones mensuales de pago con mediciones de campo y Libro Legal de Obra.",
+                "Detección temprana de desvíos en productividad, plazos o rendimientos, emitiendo alertas ejecutivas inmediatas."
+              ]
+            },
+            safety: {
+              sub: "Seguridad operacional minera, investigación pericial de incidentes y cierre contractual.",
+              points: [
+                "Auditorías de cumplimiento normativo de seguridad operacional, ambiental y estándares mineros de operación.",
+                "Investigación técnica de desviaciones e incidentes operacionales mediante árbol de causas para neutralizar recurrencias.",
+                "Supervisión de punch-lists, liquidación comercial de contratos EPCT, ejecución de garantías y cierre documental final."
+              ]
+            }
+          }
+        },
+        rail: {
+          title: "Infraestructura Ferroviaria y Logística",
+          stages: {
+            mobilization: {
+              sub: "Planificación de frentes de vía, logística de materiales y acuerdos operativos de ventana de trabajo.",
+              points: [
+                "Revisar planes de trabajo para frentes de renovación/mejoramiento de vía, acopios y ventanas de corte de vía.",
+                "Organizar y fiscalizar centros logísticos de balasto, rieles, durmientes y fijaciones (trazabilidad de inventario).",
+                "Definir protocolos de interfaz operativa con concesionarios ferroviarios, cargadores y autoridades de transporte."
+              ]
+            },
+            execution: {
+              sub: "Supervisión de cuadrillas de vía, mecanizado pesado, certificaciones y Libro Legal de Obra.",
+              points: [
+                "Control de avance físico en desarmado, balasto, tendido, soldadura aluminotérmica y mecanizado pesado de vía.",
+                "Inspección de obras de arte, puentes ferroviarios, alcantarillas, desagües y pasos a nivel bajo norma técnica.",
+                "Certificación mensual de ítems ejecutados, control de rendimientos de cuadrillas y asiento en Libro Legal de Obra."
+              ]
+            },
+            safety: {
+              sub: "Sistema de Gestión de Seguridad Operacional (SMS), auditorías geométricas y habilitación de vía.",
+              points: [
+                "Implementación y fiscalización rigurosa del SMS ferroviario en zonas de trabajo activas y vías principales.",
+                "Investigación técnica de descarrilamientos o incidentes de circulación para determinar factores causales primarios.",
+                "Auditoría de parámetros geométricos de vía (trocha, peralte, alineación) y armado de expediente de habilitación."
+              ]
+            }
+          }
+        },
+        civil: {
+          title: "Obra Civil, Estructuras y Contratistas",
+          stages: {
+            mobilization: {
+              sub: "Contratación, cómputos métricos, especificaciones de calidad y logística de obrador.",
+              points: [
+                "Análisis de pliegos técnicos, cómputos métricos y matrices de riesgos contractuales de contratistas civiles.",
+                "Validación previa de planes de calidad, dosificación de hormigones y procedimientos de soldadura calificada.",
+                "Coordinación de replanteo, entrega de terreno, interfaces con interferencias existentes y montaje de obrador."
+              ]
+            },
+            execution: {
+              sub: "Control de rendimiento de contratistas, costos, ensayos de laboratorio y calidad estructural.",
+              points: [
+                "Seguimiento riguroso de rendimientos en excavación, fundaciones profundas, hormigón armado y montajes metálicos.",
+                "Control de ensayos destructivos/no destructivos de materiales, soldadura y probetas de hormigón en laboratorio y campo.",
+                "Certificación mensual con respaldo métrico objetivo, gestionando órdenes de cambio y neutralizando reclamos."
+              ]
+            },
+            safety: {
+              sub: "Auditorías de seguridad en obra, recepción provisoria y liquidación de garantías.",
+              points: [
+                "Fiscalización de condiciones de higiene y seguridad en trabajos en altura, excavaciones y maniobras con grúas.",
+                "Inspección técnica detallada para recepción provisoria, relevamiento de observaciones y seguimiento de subsanaciones.",
+                "Liquidación final de obra, verificación de fondos de reparo y cierre administrativo-contractual con contratistas."
+              ]
+            }
+          }
+        }
+      },
+      en: {
+        mining: {
+          title: "Mining & EPCT Contracts",
+          stages: {
+            mobilization: {
+              sub: "Audit of contractual matrices, engineering interfaces, and notice-to-proceed requirements.",
+              points: [
+                "Comprehensive audit of scopes of work, battery limits, and penalty structures in active EPCT contracts.",
+                "Establishment of responsibility and technical interface matrices between owner, contractors, and vendors.",
+                "Validation of baseline milestone schedules, mobilization milestones, and key personnel/equipment approvals."
+              ]
+            },
+            execution: {
+              sub: "Daily site tracking, official work logbooks, and monthly payment certification alignment.",
+              points: [
+                "Continuous traceability of contractor obligations, technical deliverables, and real physical progress on site.",
+                "Strict alignment of monthly payment certificates with on-site physical quantities and official logbooks.",
+                "Early detection of productivity, schedule, or cost variances, issuing rapid bilingual executive alerts."
+              ]
+            },
+            safety: {
+              sub: "Operational safety, incident root-cause analysis, and structured contract closeout.",
+              points: [
+                "Compliance audits against mining regulatory frameworks, environmental controls, and client HSE standards.",
+                "Technical investigation of operational incidents using root-cause trees to eliminate recurrence.",
+                "Supervision of punch-list resolution, EPCT commercial settlement, warranty releases, and final documentation."
+              ]
+            }
+          }
+        },
+        rail: {
+          title: "Railway Infrastructure & Logistics",
+          stages: {
+            mobilization: {
+              sub: "Track workfront planning, material logistics, and operational track possession agreements.",
+              points: [
+                "Detailed review of track renewal/improvement work plans, staging areas, and track possession windows.",
+                "Staging and supply-chain oversight for ballast, rail, sleepers, and fastenings across logistics yards.",
+                "Definition of interface and operating protocols with railway operators and transport authorities."
+              ]
+            },
+            execution: {
+              sub: "Oversight of track crews, heavy tamping/regulating machinery, and monthly certifications.",
+              points: [
+                "Daily monitoring of track dismantling, ballast profiling, laying, thermite welding, and heavy tamping.",
+                "Technical supervision of civil structures, bridges, drainage culverts, and level crossings.",
+                "Monthly certification of completed pay items, daily production tracking, and formal logbook entries."
+              ]
+            },
+            safety: {
+              sub: "Safety Management Systems (SMS), operational audits, and final corridor commissioning.",
+              points: [
+                "Implementation and enforcement of railway SMS across active workzones and running lines.",
+                "Forensic technical investigation of derailments and operational incidents to identify causal factors.",
+                "Geometrical track parameter audits (gauge, cross-level, alignment) and commissioning dossier sign-off."
+              ]
+            }
+          }
+        },
+        civil: {
+          title: "Civil Works, Structures & Contractors",
+          stages: {
+            mobilization: {
+              sub: "Procurement, quantity surveying, technical specs, and civil execution planning.",
+              points: [
+                "Detailed review of bidding documents, bills of quantities, and contractor risk matrices.",
+                "Pre-qualification of quality plans, concrete pouring procedures, and welding procedures/certifications.",
+                "Coordination of site handover, utility relocations, and temporary construction camp mobilization."
+              ]
+            },
+            execution: {
+              sub: "Contractor productivity tracking, cost control, testing, and structural quality.",
+              points: [
+                "Daily performance monitoring for earthworks, foundations, structural concrete, and steel erection.",
+                "Oversight of destructive and non-destructive testing for soils, concrete cylinders, and structural welds.",
+                "Field-verified monthly certifications, disciplined variation management, and contractor claim defense."
+              ]
+            },
+            safety: {
+              sub: "Site safety oversight, provisional acceptance, and warranty fund closeout.",
+              points: [
+                "HSE compliance supervision for deep excavations, crane operations, and working at heights.",
+                "Technical punch-listing, substantial completion inspections, and snag-list rectification control.",
+                "Final account settlement, retention release verification, and administrative contract closeout."
+              ]
+            }
+          }
+        }
+      }
+    };
+
+    let currentLang = "es";
+
+    function setLang(lang) {
+      currentLang = lang;
+      document.documentElement.lang = lang;
+      document.getElementById("btn-es").classList.toggle("active", lang === "es");
+      document.getElementById("btn-en").classList.toggle("active", lang === "en");
+
+      document.querySelectorAll("[data-i18n]").forEach(el => {
+        const key = el.getAttribute("data-i18n");
+        if (translations[lang] && translations[lang][key]) {
+          el.textContent = translations[lang][key];
+        }
+      });
+
+      updateDiagnostic();
+    }
+
+    function filterMilestones(cat, btn) {
+      document.querySelectorAll(".filter-btn").forEach(b => b.classList.remove("active"));
+      if (btn) btn.classList.add("active");
+
+      document.querySelectorAll(".milestone-card").forEach(card => {
+        const match = cat === "all" || card.getAttribute("data-cat") === cat;
+        card.style.display = match ? "flex" : "none";
+      });
+    }
+
+    function toggleMobileNav() {
+      const navLinks = document.querySelector(".nav-links");
+      const btn = document.getElementById("mobile-toggle");
+      const isOpen = navLinks.classList.toggle("open");
+      if (btn) btn.setAttribute("aria-expanded", isOpen);
+    }
+
+    // Close mobile nav when clicking any link
+    document.addEventListener("DOMContentLoaded", () => {
+      document.querySelectorAll(".nav-links a").forEach(link => {
+        link.addEventListener("click", () => {
+          const navLinks = document.querySelector(".nav-links");
+          if (navLinks) navLinks.classList.remove("open");
+          const btn = document.getElementById("mobile-toggle");
+          if (btn) btn.setAttribute("aria-expanded", "false");
+        });
+      });
+    });
+
+    function updateDiagnostic() {
+      const sector = document.getElementById("sector-select").value;
+      const stage = document.getElementById("stage-select").value;
+      const stageSelect = document.getElementById("stage-select");
+      const stageText = stageSelect.options[stageSelect.selectedIndex].text;
+
+      const sectorData = diagData[currentLang] && diagData[currentLang][sector] ? diagData[currentLang][sector] : null;
+      if (!sectorData) return;
+
+      const stageData = sectorData.stages && sectorData.stages[stage] ? sectorData.stages[stage] : null;
+
+      document.getElementById("diag-headline").textContent = `${sectorData.title} · ${stageText}`;
+      document.getElementById("diag-sub").textContent = stageData ? stageData.sub : "";
+
+      const ul = document.getElementById("diag-points");
+      ul.innerHTML = "";
+      const points = stageData ? stageData.points : [];
+      points.forEach(pt => {
+        const li = document.createElement("li");
+        li.textContent = pt;
+        ul.appendChild(li);
+      });
+
+      // Update WhatsApp link text with diagnostic context
+      const waBtn = document.getElementById("wa-btn");
+      if (waBtn) {
+        const contextMsg = encodeURIComponent(`Hola Sebastian, te contacto desde BALANCED por un proyecto de ${sectorData.title} (${stageText}).`);
+        waBtn.href = `https://wa.me/5491100000000?text=${contextMsg}`;
+      }
+    }
+
+    function prefillContact() {
+      const headline = document.getElementById("diag-headline").textContent;
+      const points = Array.from(document.querySelectorAll("#diag-points li")).map(li => "- " + li.textContent).join("\n");
+      const textarea = document.getElementById("msg-input");
+      textarea.value = `[${headline}]\n${points}`;
+      document.getElementById("contact").scrollIntoView({ behavior: "smooth" });
+      textarea.focus();
+    }
+
+    function escapeHtml(str) {
+      return str.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;").replace(/'/g, "&#039;");
+    }
+
+    function handleSubmit(e) {
+      e.preventDefault();
+      const name = document.getElementById("name-input").value.trim();
+      const email = document.getElementById("email-input").value.trim();
+      const msg = document.getElementById("msg-input").value.trim();
+
+      const recipient = "sebastianthim@gmail.com";
+      const subject = encodeURIComponent(`BALANCED — Consulta de ${name}`);
+      const body = encodeURIComponent(`Nombre / Empresa: ${name}\nEmail de contacto: ${email}\n\nDetalle del Proyecto / Consulta:\n${msg}\n\n---\nEnviado a través de BALANCED — Soluciones de Infraestructura y Contratos`);
+      const mailUrl = `mailto:${recipient}?subject=${subject}&body=${body}`;
+
+      const waMsg = encodeURIComponent(`Hola Sebastian, te contacto desde BALANCED.\nNombre: ${name}\nEmail: ${email}\nConsulta: ${msg.slice(0, 140)}...`);
+      const waUrl = `https://wa.me/5491100000000?text=${waMsg}`;
+
+      // Launch email client
+      window.location.href = mailUrl;
+
+      const status = document.getElementById("form-status");
+      status.style.display = "block";
+      const safeName = escapeHtml(name);
+
+      if (currentLang === "es") {
+        status.innerHTML = `
+          <strong>¡Consulta preparada para ${safeName}!</strong><br/>
+          Se ha generado un borrador en su cliente de correo con los datos ingresados.<br/>
+          • Si no se abrió automáticamente: <a href="${mailUrl}" style="color:var(--accent); text-decoration:underline; font-weight:600;">Haga clic aquí para enviar el correo</a><br/>
+          • O conecte directamente vía <a href="https://www.linkedin.com/in/sebastian-juarez-tejerina-5618b712a" target="_blank" rel="noopener noreferrer" style="color:var(--accent); text-decoration:underline; font-weight:600;">LinkedIn</a> o <a href="${waUrl}" target="_blank" rel="noopener noreferrer" style="color:#25D366; text-decoration:underline; font-weight:600;">WhatsApp</a>.
+        `;
+      } else {
+        status.innerHTML = `
+          <strong>Inquiry prepared for ${safeName}!</strong><br/>
+          An email draft has been generated in your mail application.<br/>
+          • If it did not open automatically: <a href="${mailUrl}" style="color:var(--accent); text-decoration:underline; font-weight:600;">Click here to open email draft</a><br/>
+          • Or connect directly via <a href="https://www.linkedin.com/in/sebastian-juarez-tejerina-5618b712a" target="_blank" rel="noopener noreferrer" style="color:var(--accent); text-decoration:underline; font-weight:600;">LinkedIn</a> or <a href="${waUrl}" target="_blank" rel="noopener noreferrer" style="color:#25D366; text-decoration:underline; font-weight:600;">WhatsApp</a>.
+        `;
+      }
+    }
+
+    updateDiagnostic();
+  </script>
+</body>
+</html>
